@@ -1,0 +1,767 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+$none: none;
+
+// text sass
+
+  .textDecorationNone {
+    text-decoration: $none;
+  }
+  .listStyleNone {
+    list-style: $none;
+  }
+
+// height size % : eg : height-100-per
+
+@for $i from 1 through 100 {
+  .height-#{$i}-per {
+    height: $i*1%;  
+  }
+}
+
+// height size vh : eg : height-100-vh
+
+@for $i from 1 through 100 {
+  .height-#{$i}-vh {
+    height: $i*1vh;  
+  }
+}
+
+// spacer css code (px)
+
+    @for $i from 1 through 100 {
+      .spacer-#{$i} {
+        height: $i*1px;  
+      }
+    }
+
+
+// Width css code (%)
+
+    // width size % : eg : width-100-per
+      @for $i from 1 through 100 {
+        .width-#{$i}-per {
+          width: $i*1%;  
+        }
+      }
+
+// Width css code (px)
+
+    // width size px : eg : width-100-px
+      @for $i from 1 through 1000 {
+        .width-#{$i}-px {
+          width: $i*1px;  
+        }
+      }
+
+ // height size % : eg : height-100-px
+
+  @for $i from 1 through 800 {
+    .height-#{$i}-px {
+      height: $i*1px;  
+    }
+  }
+
+// padding css code (px)
+
+      // pa-l : per : pa-l-10-px
+      @for $i from 0 through 100 {      
+        .pa-l-#{$i}-px {
+          padding-left:  $i*1px;
+        }                
+      }
+
+      // pa-r : per : pa-r-10-px
+      @for $i from 0 through 100 {
+        .pa-r-#{$i}-px {
+          padding-right:  $i*1px;
+        }
+      }
+
+      // pa-t : per : pa-t-10-px
+      @for $i from 0 through 100 {
+        .pa-t-#{$i}-px {
+          padding-top:  $i*1px;
+        }
+      }
+
+      // pa-b : per : pa-b-10-px
+      @for $i from 0 through 100 {
+        .pa-b-#{$i}-px {
+          padding-bottom:  $i*1px;
+        }
+      }
+
+// margin css code (em)
+
+      // pa-l : per : pa-l-10-em
+      @for $i from 0 through 100 {      
+        .pa-l-#{$i}-em {
+          padding-left:  $i*1em;
+        }                
+      }
+
+      // pa-r : per : pa-r-10-em
+      @for $i from 0 through 100 {
+        .pa-r-#{$i}-em {
+          padding-right:  $i*1em;
+        }
+      }
+
+      // pa-t : per : pa-t-10-em
+      @for $i from 0 through 100 {
+        .pa-t-#{$i}-em {
+          padding-top:  $i*1em;
+        }
+      }
+
+      // pa-b : per : pa-b-10-em
+      @for $i from 0 through 100 {
+        .pa-b-#{$i}-em {
+          padding-bottom:  $i*1em;
+        }
+      }
+
+// margin css code (px)
+
+      // ma-l : per : ma-l-10-px
+      @for $i from 0 through 100 {      
+        .ma-l-#{$i}-px {
+          margin-left:  $i*1px;
+        }        
+        
+      }
+
+      // ma-r : per : ma-r-10-px
+      @for $i from 0 through 100 {
+        .ma-r-#{$i}-px {
+          margin-right:  $i*1px;
+        }
+      }
+
+      // ma-t : per : ma-t-10-px
+      @for $i from 0 through 100 {
+        .ma-t-#{$i}-px {
+          margin-top:  $i*1px;
+        }
+      }
+
+      // ma-b : per : ma-b-10-px
+      @for $i from 0 through 100 {
+        .ma-b-#{$i}-px {
+          margin-bottom:  $i*1px;
+        }
+      }
+
+
+      // margin css code (em)
+
+      // ma-l : per : ma-l-10-em
+      @for $i from 0 through 100 {      
+        .ma-l-#{$i}-em {
+          margin-left:  $i*1em;
+        }        
+        
+      }
+
+      // ma-r : per : ma-r-10-em
+      @for $i from 0 through 100 {
+        .ma-r-#{$i}-em {
+          margin-right:  $i*1em;
+        }
+      }
+
+      // ma-t : per : ma-t-10-em
+      @for $i from 0 through 100 {
+        .ma-t-#{$i}-em {
+          margin-top:  $i*1em;
+        }
+      }
+
+      // ma-b : per : ma-b-10-em
+      @for $i from 0 through 100 {
+        .ma-b-#{$i}-em {
+          margin-bottom:  $i*1em;
+        }
+      }
+
+ // border-radius : px : border-radius-100-px
+      @for $i from 1 through 100 {
+        .border-radius-#{$i}-px {
+          border-radius:  $i*1px;
+        }
+      }
+
+// line-height per : eg : line-height-100-per
+
+  @for $i from 1 through 200 {
+    .line-height-#{$i}-per {
+      line-height: $i*2%;  
+    }
+  }
+
+// Font Css starts
+
+    $OpenSans: 'Open Sans', sans-serif;
+
+    .OpenSansFonts {
+      font-family: $OpenSans !important;
+    }
+
+// Align Css starts
+
+    $left: left;
+    $right: right;
+    $center: center;
+
+    .leftAlign {
+      text-align: $left;
+    }
+    .centerAlign {
+      text-align: $center;
+    }
+    .rightAlign {
+      text-align: $right;
+    }
+    .leftAlign span {
+      text-align: $left;
+    }
+    .centerAlign span {
+      text-align: $center;
+    }
+    .rightAlign span {
+      text-align: $right;
+    }
+
+// Flexbox Css starts
+
+    $displayFlex: flex;
+    $row: row;
+    $column: column;
+    $wrap: wrap;
+    $nowrap: nowrap;
+    $flex-start: flex-start;
+    $center: center;
+    $flex-end: flex-end;
+    $space-between: space-between;
+    $space-around: space-around;
+    $stretch: stretch;
+    $scroll: scroll;
+    
+
+
+    .displayFlex {
+      display: $displayFlex;
+    }
+    .displayFlex span {
+      display: $displayFlex;
+    }
+    .flexFlowRow {
+      flex-flow: $row;
+    }
+    .flexFlowRow span {
+      flex-flow: $row;
+    }
+    .flexFlowColumn {
+      flex-flow: $column;
+    }
+    .flexFlowColumn span {
+      flex-flow: $column;
+    }
+    .flexWrapWrap {
+      flex-wrap: $wrap;
+    }
+    .flexWrapWrap span {
+      flex-wrap: $wrap;
+    }
+    .flexWrapNoWrap {
+      flex-wrap: $nowrap;
+    }
+    .flexWrapNoWrap span {
+      flex-wrap: $nowrap;
+    }
+    .alignItemsFlexStart {
+      align-items: $flex-start
+    }
+    .alignItemsFlexStart span {
+      align-items: $flex-start
+    }
+    .alignItemsCenter {
+      align-items: $center;
+    }
+    .alignItemsCenter span {
+      align-items: $center;
+    }
+    .alignItemsFlexEnd {
+      align-items: $flex-end;
+    }
+    .alignItemsFlexEnd span {
+      align-items: $flex-end;
+    }
+    .alignContentCentre {
+      align-content: $center;
+    }
+    .alignContentCentre span {
+      align-content: $center;
+    }
+    .justifyContentFlexStart {
+      justify-content: $flex-start;
+    }
+    .justifyContentFlexStart span {
+      justify-content: $flex-start;
+    }
+    .justifyContentCentre {
+      justify-content: $center;
+    }
+    .justifyContentCentre span {
+      justify-content: $center;
+    }
+    .justifyContentFlexEnd {
+      justify-content: $flex-end;
+    }
+    .justifyContentFlexEnd span {
+      justify-content: $flex-end;
+    }
+    .justifyContentSpaceBetween {
+      justify-content: $space-between
+    }
+    .justifyContentSpaceBetween span {
+      justify-content: $space-between
+    }
+    .justifyContentSpaceAround {
+      justify-content: $space-around
+    }
+    .justifyContentSpaceAround span {
+      justify-content: $space-around
+    }
+    .alignItemsStretch {
+      align-items: $stretch
+    }
+    .alignItemsStretch span {
+      align-items: $stretch
+    }
+
+
+// flex css code
+
+    @for $i from 1 through 10 {      
+      .flex-#{$i} {
+        flex:  $i*1;
+      }        
+    }
+
+// Flexbox Css end
+
+// color text and bg color : eg : dark-background   &&   dark-color
+
+$colours:
+    "red" #FF0000,
+    "blue" #001EFF,
+    "pink" rgb(212, 0, 255),
+    "pinkTwo" #ff4d92,
+    "green" #00FF00,
+    "greenV2" #81b435,
+    "yellow" #f7af02,
+    "dark" #000000,
+    "white" #ffffff,
+    "blackOne" #20262b,
+    "blackTwo" #2c333a,
+    "blackThree" #d8d8d8,
+    "blackFour" #808588,
+    "blackFive" #20252b,
+    "blackSix" #1f2429,
+    "blackSeven" rgb(233, 233, 233),
+    "blackEight" rgb(150, 150, 150),
+    "blackNine" #efefef,
+    "primary" #1D76BC,
+    "secondary" rgb(29, 188, 100),
+    "tertiary" #759E3F,
+    "quaternary" #8DC740,
+    "blueOne" #13bdce,
+    "blueTwo" rgba(11, 84, 205, .5),
+    "blueThree" #0059a0,
+    "blueFour" #44c9ff,
+    "darkOpacity" rgba(0, 0, 0, 0.51),
+    "transparent" none;
+
+@each $i in $colours{
+	.#{nth($i, 1)}-background {
+		background: nth($i, 2);
+	}
+	.#{nth($i, 1)}-color {
+		color:nth($i, 2);
+	}
+	.#{nth($i, 1)}-border-color {
+		border-color:nth($i, 2) !important;
+	}
+}
+
+// font-weight : eg : font-800-weight
+
+$weight:
+    "font-100" 100,
+    "font-200" 200,
+    "font-300" 300,
+    "font-400" 400,
+    "font-500" 500,
+    "font-600" 600,
+    "font-700" 700,
+    "font-800" 800,
+    "font-900" 900;
+
+@each $i in $weight{
+	.#{nth($i, 1)}-weight {
+		font-weight: nth($i, 2);
+	}
+}
+
+/* Using Media Query */
+
+@mixin responsive-things {
+  
+      $breakpoint-allPhonePortraitModeValueStart: 300px;
+      $breakpoint-allPhonePortraitModeValueEnd: 767px;
+      @media (min-width:$breakpoint-allPhonePortraitModeValueStart) and (max-width: $breakpoint-allPhonePortraitModeValueEnd), (orientation: portrait) {
+      
+        .m {
+          @content
+        }
+      }
+      
+      $breakpoint-phoneLandsacpeValueStart: 461px;
+      $breakpoint-phoneLandsacpeValueEnd: 1023px;
+      @media (min-width:$breakpoint-phoneLandsacpeValueStart) and (max-width: $breakpoint-phoneLandsacpeValueEnd) and (orientation: landscape) {
+        .ml {
+          @content
+        }
+      }
+     
+      $breakpoint-tabletPortStart: 768px;
+      $breakpoint-tabletPortEnd: 1023px;
+
+      @media (min-width: $breakpoint-tabletPortStart) and (max-width: $breakpoint-tabletPortEnd), (orientation: portrait) and (min-width: $breakpoint-tabletPortStart) { 
+    
+        .tp {
+          @content
+        }
+      }
+      
+      $breakpoint-tabletLandscapeStart: 1024px;
+      $breakpoint-tabletLandscapeEnd: 1199px;
+      @media (min-width: $breakpoint-tabletLandscapeStart) and (max-width: $breakpoint-tabletLandscapeEnd) {
+   
+        .tl {
+          @content
+        }
+
+      }     
+
+      $breakpoint-desktopModeStart: 1200px;
+      @media (min-width: $breakpoint-desktopModeStart) {
+        .lg {
+          @content
+        }
+
+      }
+      
+      $breakpoint-largeDesktopModeStart: 1800px;
+      @media (min-width: $breakpoint-largeDesktopModeStart) {
+        .ex-lg {
+          @content
+        }
+
+      }
+    
+}
+
+@include responsive-things {
+
+    // flexBoxCss
+
+    &-show {
+      display: block
+    }
+    &-hide {
+      display: none
+    }
+    &-displayFlex {
+        display: $displayFlex;
+    }
+    &-flexFlowRow {
+      flex-flow: $row;
+    }
+    &-flexFlowColumn {
+      flex-flow: $column;
+    }
+    &-flexWrapWrap {
+      flex-wrap: $wrap;
+    }
+    &-flexWrapNoWrap {
+      flex-wrap: $nowrap;
+    }
+    &-alignItemsFlexStart {
+      align-items: $flex-start
+    }
+    &-alignItemsCenter {
+      align-items: $center;
+    }
+    &-alignItemsFlexEnd {
+      align-items: $flex-end;
+    }
+    &-alignContentCentre {
+      align-content: $center;
+    }
+    &-justifyContentFlexStart {
+      justify-content: $flex-start;
+    }
+    &-justifyContentFlexEnd {
+      justify-content: $center;
+    }
+    &-justifyContentFlexEnd {
+      justify-content: $flex-end;
+    }
+    &-justifyContentSpaceBetween {
+      justify-content: $space-between
+    }
+    &-justifyContentSpaceAround {
+      justify-content: $space-around
+    }
+    &-alignItemsStretch {
+      align-items: $stretch
+    }
+
+    &-scrollHorizontal {
+      overflow-x: $scroll;
+    }
+
+    @for $i from 0 through 10 {      
+        &-flex-#{$i} {
+          flex:  $i*1;
+        }        
+        
+    }
+
+    // pa-l : per : pa-l-10-em
+    @for $i from 0 through 100 {      
+        &-pa-l-#{$i}-em {
+          padding-left:  $i*1em;
+        }        
+        
+    }
+
+    // pa-r : per : pa-r-10-em
+    @for $i from 0 through 100 {
+      &-pa-r-#{$i}-em {
+        padding-right:  $i*1em;
+      }
+    }
+
+    // pa-t : per : pa-t-10-em
+    @for $i from 0 through 100 {
+      &-pa-t-#{$i}-em {
+        padding-top:  $i*1em;
+      }
+    }
+
+    // pa-b : per : pa-b-10-em
+    @for $i from 0 through 100 {
+      &-pa-b-#{$i}-em {
+        padding-bottom:  $i*1em;
+      }
+    }
+    
+    
+    // pa-l : per : pa-l-10-px
+    @for $i from 0 through 10 {      
+        &-pa-l-#{$i}-px {
+          padding-left:  $i*1px;
+        }        
+        
+    }
+
+    // pa-r : per : pa-r-10-px
+    @for $i from 0 through 10 {
+      &-pa-r-#{$i}-px {
+        padding-right:  $i*1px;
+      }
+    }
+
+    // pa-t : per : pa-t-10-px
+    @for $i from 0 through 10 {
+      &-pa-t-#{$i}-px {
+        padding-top:  $i*1px;
+      }
+    }
+
+    // pa-b : per : pa-b-10-px
+    @for $i from 0 through 10 {
+      &-pa-b-#{$i}-px {
+        padding-bottom:  $i*1px;
+      }
+    }
+
+    
+
+    // ma-l : per : ma-l-10-px
+     @for $i from 0 through 100 {      
+      &-ma-l-#{$i}-px {
+        margin-left:  $i*1px;
+      }        
+      
+    }
+
+    // ma-r : per : ma-r-10-px
+    @for $i from 0 through 100 {
+      &-ma-r-#{$i}-px {
+        margin-right:  $i*1px;
+      }
+    }
+
+    // ma-t : per : ma-t-10-px
+    @for $i from 0 through 100 {
+      &-ma-t-#{$i}-px {
+        margin-top:  $i*1px;
+      }
+    }
+
+    // ma-b : per : ma-b-10-px
+    @for $i from 0 through 100 {
+      &-ma-b-#{$i}-px {
+        margin-bottom:  $i*1px;
+      }
+    }
+
+
+
+    // width size px : eg : width-100-px
+    @for $i from 1 through 800 {
+      &-width-#{$i}-px {
+        width: $i*1px;  
+      }
+    }
+
+    // width size % : eg : width-100-per
+    @for $i from 1 through 100 {
+      &-width-#{$i}-per {
+        width: $i*1%;  
+      }
+    }
+    
+    // height size % : eg : height-100-per
+    @for $i from 1 through 100 {
+      &-height-#{$i}-per {
+        height: $i*1%;  
+      }
+    }
+    
+    // height size % : eg : height-100-px
+    @for $i from 1 through 800 {
+      &-height-#{$i}-px {
+        height: $i*1px;  
+      }
+    }
+   
+
+    // font size px : eg : font-size-100-px
+    @for $i from 1 through 100 {
+      &-font-size-#{$i}-px {
+        font-size: $i*1px;  
+      }
+    }
+    
+    // font size vh : eg : font-size-100-vh
+    @for $i from 1 through 100 {
+      &-font-size-#{$i}-vh {
+        font-size: $i*1vh;  
+      }
+    }
+
+    // font size em : eg : font-size-100-em
+    @for $i from 1 through 100 {
+      &-font-size-#{$i}-em {
+        font-size: $i*1em;  
+      }
+    }
+
+    // line-height per : eg : line-height-100-per
+    @for $i from 1 through 100 {
+      &-line-height-#{$i}-per {
+        line-height: $i*2%;  
+      }
+    }
+
+    // spacer : eg : spacer-100
+    @for $i from 1 through 100 {
+      &-spacer-#{$i} {
+        height: $i*1px;  
+      }
+    }
+
+    // spacer : vh : spacer-100-vh
+    @for $i from 1 through 100 {
+      &-spacer-#{$i}-vh {
+        height: $i*1vh;  
+      }
+    }
+
+    // border-radius : px : border-radius-100-px
+    @for $i from 1 through 100 {
+      &-border-radius-#{$i}-px {
+        border-radius:  $i*1px;
+      }
+    }
+    
+    // border : px : border-100-px
+    @for $i from 0 through 100 {
+      &-border-#{$i}-px {
+        border:  $i*1px solid;
+      }
+    }
+
+    // position absolute : px : left-0
+    @for $i from 0 through 100 {
+      &-absolute-left-#{$i}-px {
+        left:  $i*1px;
+      }
+    }
+    // position absolute : px : right-0
+    @for $i from 0 through 100 {
+      &-absolute-right-#{$i}-px {
+        right:  $i*1px;
+      }
+    }
+    // position absolute : px : bottom-0
+    @for $i from 0 through 100 {
+      &-absolute-bottom-#{$i}-px {
+        bottom:  $i*1px;
+      }
+    }
+    // position absolute : px : top-0
+    @for $i from 0 through 100 {
+      &-absolute-top-#{$i}-px {
+        top:  $i*1px;
+      }
+    }
+
+    &-absolute {
+      position: absolute;
+    }
+    
+    &-relative {
+      position: relative;
+    }
+
+    // z-index : px : z-index-0
+    @for $i from 0 through 100 {
+      &-z-index-#{$i} {
+        z-index:  $i*1;
+      }
+    }
+    
+}
